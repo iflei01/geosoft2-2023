@@ -102,9 +102,12 @@ AWS bietet mehr als 200 verschiedene Dienste in den unterschiedlichsten Branchen
 
   - **[Getting Startet mit Kinesis](https://aws.amazon.com/de/kinesis/getting-started/?nc=sn&loc=3)**
 
-- **Amazon QuickSight:** Business Intelligence-Tool zur Visualisierung von Geodaten und zur Erstellung von interaktiven Dashboards. Unterstützt eine integrierte Machine Learning Engine in Q um Berechnungen Vorzunehmen, Daten zu analysieren und aufzubereiten um sie auf den Dashboards darzustellen. Auch interaktive Karten sind integrierbar. Vergleichbar mit ArcGIS Insights, falls bekannt.
+- **Amazon QuickSight:** Business Intelligence-Tool zur Visualisierung von Geodaten und zur Erstellung von interaktiven Dashboards. Unterstützt eine integrierte Machine Learning Engine in Q um Berechnungen Vorzunehmen, Daten zu analysieren und aufzubereiten um sie auf den Dashboards darzustellen. Es arbeitet flawless mit z.B S3, PostgreSQL, MySQL und anderen Datenbanken zusammen. Auch interaktive Karten sind integrierbar. Vergleichbar mit ArcGIS Insights, falls bekannt.
   - **[Video Tutorial](https://www.youtube.com/watch?v=hh6ItJbCUQ0&ab_channel=Academind)**
-- **Amazon EC2:** Instanzen von EC2 können verwendet werden, um maßgeschneiderte Geodatenverarbeitungsanwendungen zu erstellen und auszuführen
+- **Amazon EC2:** Ermöglicht es virtuelle Computer zu mieten, auf denen Eigene Computeranwendungen ausgeführt werden können
+  Instanzen von EC2 können verwendet werden, um maßgeschneiderte Geodatenverarbeitungsanwendungen zu erstellen und auszuführen.
+  - **Anwendung:** Man erstellt eine sogenannte Instanz, bei der man eine geeignete [Instanzart](https://aws.amazon.com/de/ec2/instance-types/) auswählen muss. Daraufhin kann man eigene Firewall Regeln und die Art der Speicherung festlegen. Nach dem Deployment kann man sich über E2 Instance Connect mit der Instanz verbinden. Es gibt einige Instance-Typen die bei Befolgen einiger Regelen gratis nutzbar sind.
+  - **Geo-Kontext:** Man kann auf EC2 Server [GIS-Server](https://enterprise.arcgis.com/de/server/10.4/cloud/amazon/launch-ec2-instance-running-arcgis-server.htm), R(Studio), etc. aufsetzen, was sogar ArcGIS unterstützt wird, da diese mit AWS an mehreren stellen zusammenarbeiten.
 
 ## Wer kann aws nutzen?
 

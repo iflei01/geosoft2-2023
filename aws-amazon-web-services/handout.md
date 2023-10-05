@@ -90,7 +90,11 @@ AWS bietet mehr als 200 verschiedene Dienste in den unterschiedlichsten Branchen
   - **Geofencing:** Ermöglicht das Erstellen Virtueller Zäune, wo bei ein oder Austritt in dieses Gebiet trigger Events gestartet werden können
   - **Trackers:** Ermöglicht das Nachverfolgen der jetzigen und historischen Postitionen, bei freigegeben Geräten
   - **[Tutorial](https://www.youtube.com/watch?v=mtV3uJY917g&t=5s&ab_channel=AmazonWebServices)**
-- **Amazon S3:** zur Speicherung von Geodaten (Karten, Luftbilder, etc.)
+- **Amazon S3:** Ein skalierbarer, webbasierter Cloud-Speicherdienst der das Sichern und Archivieren von Daten und Anwedungen online in AWS ermöglicht
+  - **Anwendungsfälle:** Speicherung von (Geo-)daten (Karten, Luftbilder, etc.), Datenarchive- und sicherung, Softwarebereitstellung, Data Lakes, etc.
+  - **Funktionsweise:** Amazon S3 ist ein Objektspeicherdienst. Dies unterscheidet sich von Block- und Dateispeicher die häufig im Cloud-Computing verwendet werden. Jedes Objekt ist eine Datei mit ihren zugehörigen Metadaten und erhält eine ID. Diese Objekte können dann in vorher erstellte Buckets, die einen Namen und eine Region besitzen, eingeordnet werden. Über S3-Versioning kann man auch ältere Versionen in den Buckets behalten, falls fehler in einer neuen Version auftauchen sollten, die nicht zu lösen sind. Jedes Objekt ist über eine Kombination von Webservice-Endpunkt, Bucket-Name, Schlüssel und wahlweise einer Version aufrufbar. Beispielsweise das Objekt **ortophotos/canada.jpg** im Bucket **EXAMPLE-BUCKET** in der Region **Germany**(Europe-Frankfurt/eu-central-1) wäre addressierbar über die Location-Bucket-Schlüssel-Kombo: `https://EXAMPLE-BUCKET.s3.eu-central-1.amazonaws.com/ortophotos/canada.jpg`
+  - **Speicherklassen:** Es sind 7 Speicherklassen erhältlich, die sich hauptsächlich in der Häufigkeit der Zugriffe, der Latenz der Antwort und der Abrufgröße unterscheiden. Es gibt auch das "S3 Intelligent-Tiering", welches Anhand des Kundenzugriffsmusters automatisch die Daten in das Kostengünstigste Modul einordnet
+  - **[Benutzerhandbuch mit Click-Tutorial](https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/Welcome.html)**
 - **Amazon Elastic MapReduce (EMR):** Verarbeitung großer Datenmengen. Kann für die Analyse von Geodaten und die Ausführung von Big-Data-Workloads verwendet werden.
 - **Amazon Kinesis:** ermöglicht Echtzeitverarbeitung von Streaming-Geodaten, GPS-Trackern und Sensoren
 - **Amazon QuickSight:** Business Intelligence-Tool zur Visualisierung von Geodaten und zur Erstellung von interaktiven Dashboards
@@ -122,5 +126,7 @@ AWS bietet mehr als 200 verschiedene Dienste in den unterschiedlichsten Branchen
 ### Quellen
 
 - [AWS](https://aws.amazon.com/de/)
+- [ComputerWeekly](https://www.computerweekly.com/de/definition/Amazon-Simple-Storage-Service-Amazon-S3)
+- [medium](https://aws.plainenglish.io/all-about-amazon-location-service-725239540dba)
 - [plusserver](https://www.plusserver.com/blog/was-ist-aws-cloud/)
 - [seo-kueche](https://www.seo-kueche.de/lexikon/amazon-web-service/#:~:text=Amazon%20Web%20Services%2C%20auch%20als,Aufgaben%20mieten%20und%20vieles%20mehr.)

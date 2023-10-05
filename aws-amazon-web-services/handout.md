@@ -97,7 +97,11 @@ AWS bietet mehr als 200 verschiedene Dienste in den unterschiedlichsten Branchen
   - **[Benutzerhandbuch mit Click-Tutorial](https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/Welcome.html)**
 - **Amazon Elastic MapReduce (EMR):** Verarbeitung großer Datenmengen, wie Beispielsweise in S3 gespeicherte Data Lakes. Kann für die Analyse von Geodaten und die Ausführung von Big-Data-Workloads verwendet werden. Es Entkoppelt Speicherung und Nutzung von Daten, sodass beide unabhängig voneinander wachsen können. Außerdem sind die erstellbaren Cluster skalierbar anpassbar auf den momentanen Aufwand.
   - **Anwendungsfälle:** Big Data Analysen mithilfe von statistischen Algorithmen, Korrelation und Prognose Modellen durchführen. Aufbauen skalierbarer Data Pipelines. Verarbeiten von Echtzeit-Data-Streams, sowie Beschleunigung der Datenwissenschaften. Skalierbar genutzt werden, können dafür Apache Spark/Hadoop und, für den Geo-Kontext, z.B. [ESRI's ArcGIS GeoAnalytics Engine](https://aws.amazon.com/de/blogs/apn/big-data-analytics-with-amazon-emr-and-esri-arcgis-geoanalytics-engine/). Eine Geospatial Spark library mit über 120 Funktionen, die direkt auf E3 Data-Lakes angewendet werden kann
-- **Amazon Kinesis:** ermöglicht Echtzeitverarbeitung von Streaming-Geodaten, GPS-Trackern und Sensoren
+  - **[Benutzerhandbuch mit Tutorial](https://docs.aws.amazon.com/de_de/emr/latest/ManagementGuide/emr-what-is-emr.html)**
+- **Amazon Kinesis:** Serverloser Data-Streaming-Service für die Analyse und Verabeitung von streaming-data. Diese Daten stehen dennachgelagerten Anwendungen schon nach Sekunden zur Verfügung. Es verwaltet die Infrastruktur und Konfiguration die benötigt ist um Daten von z.B. clickstreams, social media und anderen Geodaten wie GPS-Trackern und Sensoren zu verarbeiten. Mit Kinesis Data Firehouse, können die gestreamten Daten direkt in andere AWS, wie beispielsweise E3 geladen werden.
+
+  - **[Getting Startet mit Kinesis](https://aws.amazon.com/de/kinesis/getting-started/?nc=sn&loc=3)**
+
 - **Amazon QuickSight:** Business Intelligence-Tool zur Visualisierung von Geodaten und zur Erstellung von interaktiven Dashboards
 - **Amazon EC2:** Instanzen von EC2 können verwendet werden, um maßgeschneiderte Geodatenverarbeitungsanwendungen zu erstellen und auszuführen
 

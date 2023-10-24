@@ -1,6 +1,7 @@
 # AWS - Amazon Web Services
 
 ### author: @sivenDalmatin @iflei01
+
 ## Was ist AWS?
 
 ![aws Logo](https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png)
@@ -11,7 +12,7 @@ Amazon Web Services (AWS) ist eine nach eigenen Angaben führende Cloud-Computin
 AWS wurde 2006 als Tochterunternehmen vom Online-Versandhändler Amazon.com gegründet um Entwicklern eine IT-Infrastruktur anbieten zu können. Der Fokus lag von Beginn an auf den Unternehmen statt auf den Endverbrauchern. Amazon selbst wollte für die eigene Plattform wiederverwendbare Module herstellen, die auch Dritten angeboten werden sollten. Der erste Server für aws-Dienste wurde in Südafrika entwickelt.
 Seit 2010 gibt es ein kostenloses Angebot für AWS als Reaktion auf konkurrierende Projekte. Mittlerweile gibt es Konkurrenzunternehmen wie Microsoft Azure und Google Cloud.
 Im Oktober 2021 erhielt aws einen Großauftrag des britischen Geheimdienst um ein Cloud-System für geheime Daten in Großbritannien aufzubauen.
-Die aws Server sind überall auf der Welt verteilt und die Dienste sowie die Produktpalette entwickeln sich stetig weiter. 
+Die aws Server sind überall auf der Welt verteilt und die Dienste sowie die Produktpalette entwickeln sich stetig weiter.
 
 ## Branchen
 
@@ -92,12 +93,12 @@ AWS bietet mehr als 200 verschiedene Dienste in den unterschiedlichsten Branchen
   - **Trackers:** Ermöglicht das Nachverfolgen der jetzigen und historischen Postitionen, bei freigegeben Geräten
   - **[Video Tutorial](https://www.youtube.com/watch?v=mtV3uJY917g&t=5s&ab_channel=AmazonWebServices)**
 - **Amazon S3:** Ein skalierbarer, webbasierter Cloud-Speicherdienst der das Sichern und Archivieren von Daten und Anwedungen online in AWS ermöglicht
-  - **Anwendungsfälle:** Speicherung von (Geo-)daten (Karten, Luftbilder, etc.), Datenarchive- und sicherung, Softwarebereitstellung, Data Lakes, Datenanalyse mit Kompatiblen AWS, etc.
+  - **Anwendungsfälle:** Speicherung von (Geo-)daten (Karten, Luftbilder, Trainings-Datensätzen etc.), Datenarchive- und sicherung, Softwarebereitstellung, Data Lakes, Datenanalyse mit Kompatiblen AWS, etc.
   - **Funktionsweise:** Amazon S3 ist ein Objektspeicherdienst. Dies unterscheidet sich von Block- und Dateispeicher die häufig im Cloud-Computing verwendet werden. Jedes Objekt ist eine Datei mit ihren zugehörigen Metadaten und erhält eine ID. Diese Objekte können dann in vorher erstellte Buckets, die einen Namen und eine Region besitzen, eingeordnet werden. Über S3-Versioning kann man auch ältere Versionen in den Buckets behalten, falls fehler in einer neuen Version auftauchen sollten, die nicht zu lösen sind. Jedes Objekt ist über eine Kombination von Webservice-Endpunkt, Bucket-Name, Schlüssel und wahlweise einer Version aufrufbar. Beispielsweise das Objekt **ortophotos/canada.jpg** im Bucket **EXAMPLE-BUCKET** in der Region **Germany**(Europe-Frankfurt/eu-central-1) wäre addressierbar über die Location-Bucket-Schlüssel-Kombo: `https://EXAMPLE-BUCKET.s3.eu-central-1.amazonaws.com/ortophotos/canada.jpg`
   - **Speicherklassen:** Es sind 7 Speicherklassen erhältlich, die sich hauptsächlich in der Häufigkeit der Zugriffe, der Latenz der Antwort und der Abrufgröße unterscheiden. Es gibt auch das "S3 Intelligent-Tiering", welches Anhand des Kundenzugriffsmusters automatisch die Daten in das Kostengünstigste Modul einordnet
   - **[Benutzerhandbuch mit Click-Tutorial](https://docs.aws.amazon.com/de_de/AmazonS3/latest/userguide/Welcome.html)**
 - **Amazon Elastic MapReduce (EMR):** Verarbeitung großer Datenmengen, wie Beispielsweise in S3 gespeicherte Data Lakes. Kann für die Analyse von Geodaten und die Ausführung von Big-Data-Workloads verwendet werden. Es Entkoppelt Speicherung und Nutzung von Daten, sodass beide unabhängig voneinander wachsen können. Außerdem sind die erstellbaren Cluster skalierbar anpassbar auf den momentanen Aufwand.
-  - **Anwendungsfälle:** Big Data Analysen mithilfe von statistischen Algorithmen, Korrelation und Prognose Modellen durchführen. Aufbauen skalierbarer Data Pipelines. Verarbeiten von Echtzeit-Data-Streams, sowie Beschleunigung der Datenverarbeitung. Skalierbar genutzt werden, können dafür Apache Spark/Hadoop und, für den Geo-Kontext, z.B. [ESRI's ArcGIS GeoAnalytics Engine](https://aws.amazon.com/de/blogs/apn/big-data-analytics-with-amazon-emr-and-esri-arcgis-geoanalytics-engine/). Eine Geospatial Spark library mit über 120 Funktionen, die direkt auf E3 Data-Lakes angewendet werden kann
+  - **Anwendungsfälle:** Big Data Analysen mithilfe von statistischen Algorithmen, Korrelation und Prognose Modellen durchführen. Aufbauen skalierbarer Data Pipelines. Verarbeiten von Echtzeit-Data-Streams, sowie Beschleunigung der Datenverarbeitung. Skalierbar genutzt werden, können dafür Apache Spark/Hadoop und, für den Geo-Kontext, z.B. [ESRI's ArcGIS GeoAnalytics Engine](https://aws.amazon.com/de/blogs/apn/big-data-analytics-with-amazon-emr-and-esri-arcgis-geoanalytics-engine/). Eine Geospatial Spark library mit über 120 Funktionen, die direkt auf S3 Data-Lakes angewendet werden kann
   - **[Benutzerhandbuch mit Tutorial](https://docs.aws.amazon.com/de_de/emr/latest/ManagementGuide/emr-what-is-emr.html)**
 - **Amazon Kinesis:** Serverloser Data-Streaming-Service für die Analyse und Verabeitung von streaming-data. Diese Daten stehen dennachgelagerten Anwendungen schon nach Sekunden zur Verfügung. Es verwaltet die Infrastruktur und Konfiguration die benötigt ist um Daten von z.B. clickstreams, social media und anderen Geodaten wie GPS-Trackern und Sensoren zu verarbeiten. Mit Kinesis Data Firehouse, können die gestreamten Daten direkt in andere AWS, wie beispielsweise E3 geladen werden.
 
@@ -107,12 +108,17 @@ AWS bietet mehr als 200 verschiedene Dienste in den unterschiedlichsten Branchen
   - **[Video Tutorial](https://www.youtube.com/watch?v=hh6ItJbCUQ0&ab_channel=Academind)**
 - **Amazon EC2:** Ermöglicht es virtuelle Computer zu mieten, auf denen Eigene Computeranwendungen ausgeführt werden können
   Instanzen von EC2 können verwendet werden, um maßgeschneiderte Geodatenverarbeitungsanwendungen zu erstellen und auszuführen.
+
   - **Anwendung:** Man erstellt eine sogenannte Instanz, bei der man eine geeignete [Instanzart](https://aws.amazon.com/de/ec2/instance-types/) auswählen muss. Daraufhin kann man eigene Firewall Regeln und die Art der Speicherung festlegen. Nach dem Deployment kann man sich über E2 Instance Connect mit der Instanz verbinden. Es gibt einige Instance-Typen die bei Befolgen einiger Regelen gratis nutzbar sind.
-  - **Geo-Kontext:** Man kann auf EC2 Server [GIS-Server](https://enterprise.arcgis.com/de/server/10.4/cloud/amazon/launch-ec2-instance-running-arcgis-server.htm), R(Studio), etc. aufsetzen, was sogar ArcGIS unterstützt wird, da diese mit AWS an mehreren stellen zusammenarbeiten.
+  - **Geo-Kontext:** Man kann auf EC2 Server [GIS-Server](https://enterprise.arcgis.com/de/server/10.4/cloud/amazon/launch-ec2-instance-running-arcgis-server.htm), R(Studio) Klassifikationsmodelle, Back-End Services, etc. aufsetzen, was sogar ArcGIS unterstützt, da diese mit AWS an mehreren stellen zusammenarbeiten.
+  - **[EC2 Free Launch Guide](https://www.datacamp.com/tutorial/aws-ec2-beginner-tutorial?utm_source=google&utm_medium=paid_search&utm_campaignid=19589720818&utm_adgroupid=143216588777&utm_device=c&utm_keyword=&utm_matchtype=&utm_network=g&utm_adpostion=&utm_creative=676354848881&utm_targetid=dsa-1947282172981&utm_loc_interest_ms=&utm_loc_physical_ms=9044084&utm_content=dsa~page~community-tuto&utm_campaign=230119_1-sea~dsa~tofu_2-b2c_3-eu_4-prc_5-na_6-na_7-le_8-pdsh-go_9-na_10-na_11-na-oct23&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D58hWC5kpJXexw_-8yvHwuI96ybMKkpSp9QHrbDXlqdgYUNG1hvcNikaAtDsEALw_wcB)**
+
+- **Amazon API Gateway:** Ermöglicht das Erstellen, Veröffentlichen, Warten, Überwachen und Sichern von API's. Sowohl WebSocket, als auch RESTful-APIs sind möglich. Es kann also genutzt werden um seinen eigenen Service mithilfe von diesem Service, Frontends bereitzustellen. Der Amazon API Gateway ist bis 1 Mio. empfangenen API Aufrufen kostenlos.
+  - **[Benutzerhandbuch](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)**
 
 ## Wer kann AWS nutzen?
 
-- Jede dritte Webseite nutzt AWS. Über eine Million Nutzer*innen hat die Plattform. Bekannte AWS-Kunden sind Netlfix, Twitch, Reddit.
+- Jede dritte Webseite nutzt AWS. Über eine Million Nutzer\*innen hat die Plattform. Bekannte AWS-Kunden sind Netlfix, Twitch, Reddit.
 - insbesondere kleine Unternehmen, die Nutzung wird nach Leistung abgerechnet die in Preislisten einsehbar sind
 - Kostenloses Kontingent verfügbar, entweder Testversionen oder für maximal 12 Monate (und 750 Stunden Rechenleistung oder Speichereinschränkung) oder ganz kostenlos, je nach angebotenem Produkt. Richtet sich an Studenten, Unternehmer, Kleinunternehmer und Fortune-500-Unternehmen.
 
